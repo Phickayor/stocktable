@@ -1,0 +1,84 @@
+[
+    {
+        "symbol":"AAPL",
+        "name":"Apple",
+        "marketcap":2321.23,
+        "stockprice":146.71,
+        "percentChange":-1.80,
+        "industry":"Consumer Electronics",
+        "volume":55469606,
+        "peRatio": 24.91
+    },{
+        "symbol":"MSFT",
+        "name":"Microsoft",
+        "marketcap":1855.14,
+        "stockprice":249.22,
+        "percentChange":-2.18,
+        "industry":"Software infrastructure",
+        "volume":24990905,
+        "peRatio": 27.66
+    },{
+        "symbol":"GOOG",
+        "name":"Alphabet",
+        "marketcap":1143.30,
+        "stockprice":89.35,
+        "percentChange":-1.89,
+        "industry":"Internet content and information",
+        "volume":31295619,
+        "peRatio": 19.59
+    },{
+        "symbol":"GOOGL",
+        "name":"Alphabet",
+        "marketcap":1142.36,
+        "stockprice":89.13,
+        "percentChange":-1.94,
+        "industry":"Internet content and information",
+        "volume":36585093,
+        "peRatio": 19.55
+    },{
+        "symbol":"AMZN",
+        "name":"Amazon.com",
+        "marketcap":958.12,
+        "stockprice":93.50,
+        "percentChange":-2.42,
+        "industry":"Internet retail",
+        "volume":57053812,
+        "peRatio": "-"
+    },{
+        "symbol":"BRK.A",
+        "name":"Berkshire Hathaway",
+        "marketcap":671.71,
+        "stockprice":461705.01,
+        "percentChange":0.51,
+        "industry":"Insurance Diversified",
+        "volume":4613,
+        "peRatio": "-"
+    },{
+        "symbol":"BRK.B",
+        "name":"Berkshire Hathaway",
+        "marketcap":671.15,
+        "stockprice":304.02,
+        "percentChange":0.31,
+        "industry":"Insurance Diversified",
+        "volume":3645790,
+        "peRatio": "-"
+    },{
+        "symbol":"TSLA",
+        "name":"Tesla",
+        "marketcap":622.95,
+        "stockprice":196.88,
+        "percentChange":-2.57,
+        "industry":"Auto Manufacturers",
+        "volume":142228105,
+        "peRatio":54.39 
+    },{
+        "symbol":"NVDA",
+        "name":"NVIDIA",
+        "marketcap":580.29,
+        "stockprice":232.86,
+        "percentChange":-1.60,
+        "industry":"Semiconductors",
+        "volume":58971591,
+        "peRatio": 133.83
+    }
+]
