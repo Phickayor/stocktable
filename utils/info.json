@@ -18,15 +18,6 @@
         "volume":24990905,
         "peRatio": 27.66
     },{
-        "symbol":"GOOG",
-        "name":"Alphabet",
-        "marketcap":1143.30,
-        "stockprice":89.35,
-        "percentChange":-1.89,
-        "industry":"Internet content and information",
-        "volume":31295619,
-        "peRatio": 19.59
-    },{
         "symbol":"GOOGL",
         "name":"Alphabet",
         "marketcap":1142.36,
