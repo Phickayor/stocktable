@@ -3,7 +3,7 @@ import infos from "../utils/info.json"
 function Resulttable() {
     var background; var percentcolor;
     return (
-        <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <div className="mx-auto w-11/12 relative overflow-x-auto shadow-md sm:rounded-lg">
             <table className="w-full text-sm text-left text-gray-500 ">
                 <thead className="text-lg text-black bg-white ">
                     <tr>
