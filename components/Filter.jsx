@@ -70,7 +70,7 @@ function Filter() {
                         <tr>
                             <th
                                 scope="col"
-                                className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
+                                className="px-6 py-3 hover:bg-slate-200 cursor-pointer bg-slate-200"
                                 ref={activecontainer}
                                 onClick={() => showContent(<Active />, activecontainer)}
                             >
