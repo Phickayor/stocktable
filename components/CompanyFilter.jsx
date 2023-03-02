@@ -1,6 +1,7 @@
 import React from 'react'
 
 function companyFilter(props) {
+
     var filters = [{ name: "fikayo", value: "jet" }]; var newFilter;
 
     function SelectedFilter(e) {
@@ -47,55 +48,154 @@ function companyFilter(props) {
             </div>
             <div className='flex self-center justify-between border-b-2 pb-2'>
                 <h1>Exchange</h1>
-                <select className='w-1/2 p-1 rounded-lg'>
-                    <option>Any</option>
-                </select>
+                <div type="checkbox" className='w-1/2 p-1 rounded-lg' >
+                    <button onClick={ShowOptions} className='bg-white rounded-lg  py-1 px-2 w-full text-left'> Any</button>
+                    <div className='px-6 space-y-2 rounded-lg  hidden  absolute mt-3 bg-white'>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Consumer Electronics" className='mr-2' onClick={SelectedFilter} />Biotechnology
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Semiconductors" className='mr-2' onClick={SelectedFilter} />Semiconductors
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Internet retail" className='mr-2' onClick={SelectedFilter} />Internet Retail
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className='flex self-center justify-between border-b-2 pb-2'>
                 <h1>Sector</h1>
-                <select className='w-1/2 p-1 rounded-lg'>
-                    <option>Any</option>
-                </select>
+                <div type="checkbox" className='w-1/2 p-1 rounded-lg' >
+                    <button onClick={ShowOptions} className='bg-white rounded-lg  py-1 px-2 w-full text-left'> Any</button>
+                    <div className='px-6 space-y-2 rounded-lg  hidden  absolute mt-3 bg-white'>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Consumer Electronics" className='mr-2' onClick={SelectedFilter} />Biotechnology
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Semiconductors" className='mr-2' onClick={SelectedFilter} />Semiconductors
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Internet retail" className='mr-2' onClick={SelectedFilter} />Internet Retail
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className='flex self-center justify-between border-b-2 pb-2'>
                 <h1>Country</h1>
-                <select className='w-1/2 p-1 rounded-lg'>
-                    <option>Any</option>
-                </select>
+                <div type="checkbox" className='w-1/2 p-1 rounded-lg' >
+                    <button onClick={ShowOptions} className='bg-white rounded-lg  py-1 px-2 w-full text-left'> Any</button>
+                    <div className='px-6 space-y-2 rounded-lg  hidden  absolute mt-3 bg-white'>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Consumer Electronics" className='mr-2' onClick={SelectedFilter} />Biotechnology
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Semiconductors" className='mr-2' onClick={SelectedFilter} />Semiconductors
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Internet retail" className='mr-2' onClick={SelectedFilter} />Internet Retail
+                        </div>
+                    </div>
+                </div>
             </div><div className='flex self-center justify-between border-b-2 pb-2'>
                 <h1>Employees</h1>
-                <select className='w-1/2 p-1 rounded-lg'>
-                    <option>Any</option>
-                </select>
+                <div type="checkbox" className='w-1/2 p-1 rounded-lg' >
+                    <button onClick={ShowOptions} className='bg-white rounded-lg  py-1 px-2 w-full text-left'> Any</button>
+                    <div className='px-6 space-y-2 rounded-lg  hidden  absolute mt-3 bg-white'>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Consumer Electronics" className='mr-2' onClick={SelectedFilter} />Biotechnology
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Semiconductors" className='mr-2' onClick={SelectedFilter} />Semiconductors
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Internet retail" className='mr-2' onClick={SelectedFilter} />Internet Retail
+                        </div>
+                    </div>
+                </div>
             </div><div className='flex self-center justify-between border-b-2 pb-2'>
                 <h1>Founded</h1>
-                <select className='w-1/2 p-1 rounded-lg'>
-                    <option>Any</option>
-                </select>
+                <div type="checkbox" className='w-1/2 p-1 rounded-lg' >
+                    <button onClick={ShowOptions} className='bg-white rounded-lg  py-1 px-2 w-full text-left'> Any</button>
+                    <div className='px-6 space-y-2 rounded-lg  hidden  absolute mt-3 bg-white'>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Consumer Electronics" className='mr-2' onClick={SelectedFilter} />Biotechnology
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Semiconductors" className='mr-2' onClick={SelectedFilter} />Semiconductors
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Internet retail" className='mr-2' onClick={SelectedFilter} />Internet Retail
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className='flex self-center justify-between border-b-2 pb-2'>
                 <h1>IPO Date</h1>
-                <select className='w-1/2 p-1 rounded-lg'>
-                    <option>Any</option>
-                </select>
+                <div type="checkbox" className='w-1/2 p-1 rounded-lg' >
+                    <button onClick={ShowOptions} className='bg-white rounded-lg  py-1 px-2 w-full text-left'> Any</button>
+                    <div className='px-6 space-y-2 rounded-lg  hidden  absolute mt-3 bg-white'>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Consumer Electronics" className='mr-2' onClick={SelectedFilter} />Biotechnology
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Semiconductors" className='mr-2' onClick={SelectedFilter} />Semiconductors
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Internet retail" className='mr-2' onClick={SelectedFilter} />Internet Retail
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className='flex self-center justify-between border-b-2 pb-2'>
                 <h1>Earnings Date</h1>
-                <select className='w-1/2 p-1 rounded-lg'>
-                    <option>Any</option>
-                </select>
+                <div type="checkbox" className='w-1/2 p-1 rounded-lg' >
+                    <button onClick={ShowOptions} className='bg-white rounded-lg  py-1 px-2 w-full text-left'> Any</button>
+                    <div className='px-6 space-y-2 rounded-lg  hidden  absolute mt-3 bg-white'>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Consumer Electronics" className='mr-2' onClick={SelectedFilter} />Biotechnology
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Semiconductors" className='mr-2' onClick={SelectedFilter} />Semiconductors
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Internet retail" className='mr-2' onClick={SelectedFilter} />Internet Retail
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className='flex self-center justify-between border-b-2 pb-2'>
                 <h1>Is SPAC</h1>
-                <select className='w-1/2 p-1 rounded-lg'>
-                    <option>Any</option>
-                </select>
+                <div type="checkbox" className='w-1/2 p-1 rounded-lg' >
+                    <button onClick={ShowOptions} className='bg-white rounded-lg  py-1 px-2 w-full text-left'> Any</button>
+                    <div className='px-6 space-y-2 rounded-lg  hidden  absolute mt-3 bg-white'>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Consumer Electronics" className='mr-2' onClick={SelectedFilter} />Biotechnology
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Semiconductors" className='mr-2' onClick={SelectedFilter} />Semiconductors
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Internet retail" className='mr-2' onClick={SelectedFilter} />Internet Retail
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className='flex self-center justify-between border-b-2 pb-2'>
                 <h1>In Index</h1>
-                <select className='w-1/2 p-1 rounded-lg'>
-                    <option>Any</option>
-                </select>
+                <div type="checkbox" className='w-1/2 p-1 rounded-lg' >
+                    <button onClick={ShowOptions} className='bg-white rounded-lg  py-1 px-2 w-full text-left'> Any</button>
+                    <div className='px-6 space-y-2 rounded-lg  hidden  absolute mt-3 bg-white'>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Consumer Electronics" className='mr-2' onClick={SelectedFilter} />Biotechnology
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Semiconductors" className='mr-2' onClick={SelectedFilter} />Semiconductors
+                        </div>
+                        <div className='block'>
+                            <input type="checkbox" name="industry" value="Internet retail" className='mr-2' onClick={SelectedFilter} />Internet Retail
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

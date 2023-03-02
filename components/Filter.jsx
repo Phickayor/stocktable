@@ -1,4 +1,4 @@
-import { faLock } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown, faAngleUp, faLock } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useState, useRef } from 'react'
 import Active from './Active'
@@ -7,14 +7,20 @@ import DividendsFilter from './DividendsFilter'
 import ValuationFilter from './ValuationFilter'
 function Filter(props) {
     const [content, SetContent] = useState(<Active />)
+    const contentContainer = useRef(null)
     const activecontainer = useRef(null)
     const companycontainer = useRef(null)
     const dividendscontainer = useRef(null)
     const financialscontainer = useRef(null)
     const valuationcontainer = useRef(null)
+    var arrow = <FontAwesomeIcon icon={faAngleDown} onClick={showFilter} className="cursor-pointer text-lg" />
+
 
     function compfilters(details) {
         props.setFilterHandler(details)
+    }
+    function showFilter() {
+        contentContainer.current.classList.toggle("hidden")
     }
     function showContent(e, name) {
         SetContent(e)
@@ -28,6 +34,9 @@ function Filter(props) {
             }
         })
     }
+    useEffect(() => {
+        compfilters()
+    }, [])
 
     // const padlock = <FontAwesomeIcon icon={faLock} />
     return (
@@ -151,7 +160,7 @@ function Filter(props) {
                     </tr>
 
                 </div>
-                <div className='my-5'>
+                <div className='my-5' ref={contentContainer} >
                     {content}
                 </div>
             </div>
