@@ -5,7 +5,7 @@ import Active from './Active'
 import CompanyFilter from './CompanyFilter'
 import DividendsFilter from './DividendsFilter'
 import ValuationFilter from './ValuationFilter'
-function Filter() {
+function Filter(props) {
     const [content, SetContent] = useState(<Active />)
     const activecontainer = useRef(null)
     const companycontainer = useRef(null)
@@ -13,6 +13,9 @@ function Filter() {
     const financialscontainer = useRef(null)
     const valuationcontainer = useRef(null)
 
+    function compfilters(details) {
+        props.setFilterHandler(details)
+    }
     function showContent(e, name) {
         SetContent(e)
         var containers = [valuationcontainer, activecontainer, companycontainer, dividendscontainer, financialscontainer]
@@ -80,7 +83,7 @@ function Filter() {
                             <th scope="col"
                                 ref={companycontainer}
                                 className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
-                                onClick={() => showContent(<CompanyFilter />, companycontainer)}
+                                onClick={() => showContent(<CompanyFilter filterHandler={compfilters} />, companycontainer)}
                             >
                                 Company
                             </th>
@@ -142,9 +145,11 @@ function Filter() {
                             style={(content.type.name === "DividendsFilter") ? { backgroundColor: "#e5e7eb" } : { backgroundColor: "none" }}
                         >
                             Dividends
-                        </th>                        <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer">Other</th>
+                        </th>
+                        <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer">Other</th>
                         <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer">All</th>
                     </tr>
+
                 </div>
                 <div className='my-5'>
                     {content}

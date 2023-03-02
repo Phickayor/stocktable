@@ -1,7 +1,26 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import infos from "../utils/info.json"
-function Resulttable() {
+function Resulttable(props) {
+    const SetFilter = props.filterdetails
     var background; var percentcolor;
+    var filteredInfo = []
+    function SetFilteredInfo(filters) {
+        infos.map(info => {
+            filters.map(filter => {
+                var column = filter.name
+                var content = filter.value
+                if (info[column] === info[content]) {
+                    console.log(info[column])
+                    filteredInfo.push(info)
+                }
+            })
+        })
+    }
+    useEffect(() => {
+        SetFilteredInfo([{ name: 'industry', value: 'biotechnology' }])
+        console.log(SetFilter)
+    })
+
     return (
         <div className="mx-auto w-11/12 relative overflow-x-auto shadow-md sm:rounded-lg">
             <table className="w-full text-sm text-left text-gray-500 ">
@@ -18,7 +37,7 @@ function Resulttable() {
                     </tr>
                 </thead>
                 <tbody className="text-[#111827] font-sans ">
-                    {infos.map((info, index) => {
+                    {filteredInfo.map((info, index) => {
                         if (index % 2 != 0) {
                             background = "white"
                         }

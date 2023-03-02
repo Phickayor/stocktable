@@ -1,8 +1,16 @@
 import Filter from '@/components/Filter'
 import Resulttable from '@/components/Resulttable'
 import Head from 'next/head'
+import { useState } from 'react'
 
-export default function Home() {
+export default function Home({ filterdetails }) {
+  // const filter = props.filter
+  const [filters, setfilters] = useState()
+  filterdetails = filters
+  // console.log(filter)
+  function setFilter(details) {
+    setfilters(details)
+  }
   return (
     <>
       <Head>
@@ -11,8 +19,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Filter />
-      <Resulttable />
+      <Filter setFilterHandler={setFilter} />
+      <Resulttable filterdetails={filterdetails} />
     </>
   )
 }
