@@ -1,0 +1,34 @@
+[
+    {
+    "name":"Dividend Yield",
+    "options":[]
+    },
+    {
+    "name":"Dividend ($)",
+    "options":[]
+    },
+    {
+    "name":"Dividend Growth",
+    "options":[]
+    },
+    {
+    "name":"Payout Ratio",
+    "options":[]
+    },
+    {
+    "name":"Payout Frq.",
+    "options":[]
+    },
+    {
+    "name":"Buyback Yield",
+    "options":[]
+    },
+    {
+    "name":"Shareholder Yield",
+    "options":[]
+    },
+    {
+    "name":"Ex-Div Date",
+    "options":[]
+    }
+]
