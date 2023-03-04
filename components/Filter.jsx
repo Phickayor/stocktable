@@ -4,11 +4,14 @@ import React, { useEffect, useState, useRef } from 'react'
 import Active from './Active'
 import CompanyFilter from './CompanyFilter'
 import DividendsFilter from './DividendsFilter'
+import FinancialsFilter from './FinancialsFilter'
 import ValuationFilter from './ValuationFilter'
+import PopularFilter from './PopularFilter'
 function Filter(props) {
     const [content, SetContent] = useState(<Active />)
     const contentContainer = useRef(null)
     const activecontainer = useRef(null)
+    const popularcontainer = useRef(null)
     const companycontainer = useRef(null)
     const dividendscontainer = useRef(null)
     const financialscontainer = useRef(null)
@@ -24,7 +27,7 @@ function Filter(props) {
     }
     function showContent(e, name) {
         SetContent(e)
-        var containers = [valuationcontainer, activecontainer, companycontainer, dividendscontainer, financialscontainer]
+        var containers = [popularcontainer, valuationcontainer, activecontainer, companycontainer, dividendscontainer, financialscontainer]
         containers.map((container) => {
             if (container == name) {
                 container.current.classList.add("bg-slate-200")
@@ -88,7 +91,11 @@ function Filter(props) {
                             >
                                 Active
                             </th>
-                            <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer">Popular</th>
+                            <th scope="col"
+                                className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
+                                ref={popularcontainer}
+                                onClick={() => showContent(<PopularFilter />, popularcontainer)}
+                            >Popular</th>
                             <th scope="col"
                                 ref={companycontainer}
                                 className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
@@ -99,7 +106,7 @@ function Filter(props) {
                             <th scope="col"
                                 className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
                                 ref={financialscontainer}
-                            >Financials</th>
+                                onClick={() => showContent(<FinancialsFilter />, financialscontainer)} >Financials</th>
                             <th scope="col"
                                 className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
                                 ref={valuationcontainer}
@@ -114,6 +121,7 @@ function Filter(props) {
                             >
                                 Dividends
                             </th>
+
                             <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer">Other</th>
                             <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer">All</th>
                         </tr>
@@ -133,7 +141,10 @@ function Filter(props) {
                         >
                             Active
                         </th>
-                        <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer">Popular</th>
+                        <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
+                            onClick={() => SetContent(<PopularFilter />)}
+                            style={(content.type.name === "popularFilter") ? { backgroundColor: "#e5e7eb" } : { backgroundColor: "none" }}
+                        >Popular</th>
                         <th scope="col"
                             className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
                             onClick={() => SetContent(<CompanyFilter />)}
@@ -141,7 +152,13 @@ function Filter(props) {
                         >
                             Company
                         </th>
-                        <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer">Financials</th>
+                        <th scope="col"
+                            className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
+                            onClick={() => SetContent(<FinancialsFilter />)}
+                            style={(content.type.name === "FinancialsFilter") ? { backgroundColor: "#e5e7eb" } : { backgroundColor: "none" }}
+                        >
+                            Financials
+                        </th>
                         <th scope="col"
                             className="px-6 py-3 hover:bg-slate-200 cursor-pointer" onClick={() => SetContent(<ValuationFilter />)}
                             style={(content.type.name === "ValuationFilter") ? { backgroundColor: "#e5e7eb" } : { backgroundColor: "none" }}

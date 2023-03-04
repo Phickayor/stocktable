@@ -1,0 +1,62 @@
+[
+    {
+    "name":"Market Cap",
+    "options":[]
+    },
+    {
+    "name":"Industry",
+    "options":[]
+    },
+    {
+    "name":"Stock Price",
+    "options":[]
+    },
+    {
+    "name":"Forward PE",
+    "options":[]
+    },
+    {
+    "name":"Dividend Yield",
+    "options":[]
+    },
+    {
+    "name":"Dividend Growth",
+    "options":[]
+    },
+    {
+    "name":"Price Change 1D",
+    "options":[]
+    },
+    {
+    "name":"Volume",
+    "options":[]
+    },
+    {
+    "name":"PE Ratio",
+    "options":[]
+    },
+    {
+    "name":"Analyst Rating",
+    "options":[]
+    },
+    {
+    "name":"Country",
+    "options":[]
+    },
+    {
+    "name":"Revenue Growth",
+    "options":[]
+    },
+    {
+    "name":"EPS Growth",
+    "options":[]
+    },
+    {
+    "name":"EPS Growth Next 5Y",
+    "options":[]
+    },
+    {
+    "name":"In Index",
+    "options":[]
+    }
+]
