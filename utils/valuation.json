@@ -1,0 +1,79 @@
+[
+    {
+    "name":"Market Cap",
+    "options":[]
+    },
+    {
+    "name":"Enterprise Price Value",
+    "options":[]
+    },
+    {
+    "name":"Stock Price",
+    "options":[]
+    },
+    {
+    "name":"Forward PE",
+    "options":[]
+    },
+    {
+    "name":"PE Ratio",
+    "options":[]
+    },
+    {
+    "name":"PS Ratio",
+    "options":[]
+    },
+    {
+    "name":"Forward PS",
+    "options":[]
+    },
+    {
+    "name":"PB Ratio",
+    "options":[]
+    },
+    {
+    "name":"P/FCF Ratio",
+    "options":[]
+    },
+    {
+    "name":"PEG Ratio",
+    "options":[]
+    },
+    {
+    "name":"EV/Sales",
+    "options":[]
+    },
+    {
+    "name":"Forward EV/Sales",
+    "options":[]
+    },
+    {
+    "name":"EV/Earnings",
+    "options":[]
+    }
+    ,
+    {
+    "name":"EV/EBITDA",
+    "options":[]
+    },
+    {
+    "name":"EV/EBIT",
+    "options":[]
+    },
+    {
+    "name":"EV/FCF",
+    "options":[]
+    },
+    {
+    "name":"Earnings Yield",
+    "options":[]
+    },
+    {
+    "name":"FCF Yield",
+    "options":[]
+    },
+    {
+    "name":"Market Cap Group",
+    "options":[]
+    }
+]
