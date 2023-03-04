@@ -1,0 +1,42 @@
+[
+    {
+    "name":"Company",
+    "options":[]
+    },
+    {
+    "name":"Exchange",
+    "options":[]
+    },
+    {
+    "name":"Sector",
+    "options":[]
+    },
+    {
+    "name":"Country",
+    "options":[]
+    },
+    {
+    "name":"Employees",
+    "options":[]
+    },
+    {
+    "name":"Founded",
+    "options":[]
+    },
+    {
+    "name":"IPO Date",
+    "options":[]
+    },
+    {
+    "name":"Earnings Date",
+    "options":[]
+    },
+    {
+    "name":"Is SPAC",
+    "options":[]
+    },
+    {
+    "name":"In Index",
+    "options":[]
+    }
+]
