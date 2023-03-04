@@ -1,0 +1,245 @@
+[
+    {
+    "name":"Financial Report Date",
+    "options":[]
+    },
+    {
+    "name":"Revenue",
+    "options":[]
+    },
+    {
+    "name":"Revenue Growth",
+    "options":[]
+    },
+    {
+    "name":"Rev. Growth(Q)",
+    "options":[]
+    },
+    {
+    "name":"Rev. Growth 3Y",
+    "options":[]
+    },
+    {
+    "name":"Rev. Growth 5Y",
+    "options":[]
+    },
+    {
+    "name":"Gross Profit",
+    "options":[]
+    },
+    {
+    "name":"Gross Prof. Growth",
+    "options":[]
+    },
+    {
+    "name":"Gross Prof. Growth (Q)",
+    "options":[]
+    },
+    {
+    "name":"Gross Prof. Growth 3Y",
+    "options":[]
+    },
+    {
+    "name":"Gross Prof. Growth 5Y",
+    "options":[]
+    },
+    {
+    "name":"Op. Income",
+    "options":[]
+    },
+    {
+    "name":"Op. Income Growth",
+    "options":[]
+    },
+    {
+    "name":"Op. Income Growth (Q)",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Op. Income Growth 3Y",
+    "options":[]
+    },
+    {
+    "name":"Op. Income Growth 5Y",
+    "options":[]
+    },
+    {
+    "name":"Net Income",
+    "options":[]
+    },
+    {
+    "name":"Net Income Growth",
+    "options":[]
+    },
+    {
+    "name":"Net Income Growth (Q)",
+    "options":[]
+    },
+    {
+    "name":"Net Income Growth 3Y",
+    "options":[]
+    },
+    {
+    "name":"Net Income Growth 5Y",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Income Taxes",
+    "options":[]
+    },
+    {
+    "name":"EPS",
+    "options":[]
+    },
+    {
+    "name":"EPS Growth",
+    "options":[]
+    },
+    {
+    "name":"EPS Growth (Q)",
+    "options":[]
+    },
+    {
+    "name":"EPS Growth 3Y",
+    "options":[]
+    },
+    {
+    "name":"EPS Growth 5Y",
+    "options":[]
+    },
+    {
+    "name":"EBIT",
+    "options":[]
+    }
+    ,
+    {
+    "name":"EBITDA",
+    "options":[]
+    },
+    {
+    "name":"Op. Cash Flow",
+    "options":[]
+    },
+    {
+    "name":"Share-Based Compensation",
+    "options":[]
+    },
+    {
+    "name":"Inv. Cash Flow",
+    "options":[]
+    },
+    {
+    "name":"Fin. Cash Flow)",
+    "options":[]
+    },
+    {
+    "name":"Net Cash Flow",
+    "options":[]
+    },
+    {
+    "name":"CapEx",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Free Cash Flow",
+    "options":[]
+    },
+    {
+    "name":"Adjusted FCF",
+    "options":[]
+    },
+    {
+    "name":"FCF / Share",
+    "options":[]
+    },
+    {
+    "name":"FCF Growth",
+    "options":[]
+    },
+    {
+    "name":"FCF Growth (Q)",
+    "options":[]
+    },
+    {
+    "name":"FCF Growth 3Y",
+    "options":[]
+    },
+    {
+    "name":"FCF Growth 5Y",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Total Cash",
+    "options":[]
+    },
+    {
+    "name":"Total Debt",
+    "options":[]
+    },
+    {
+    "name":"Net Cash / Debt",
+    "options":[]
+    },
+    {
+    "name":"Net Cash Growth",
+    "options":[]
+    },
+    {
+    "name":"Cash/ Market App",
+    "options":[]
+    },
+    {
+    "name":"Total Assets",
+    "options":[]
+    },
+    {
+    "name":"TOtal Liabilities",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Gross Margin",
+    "options":[]
+    },
+    {
+    "name":"Operating Margin",
+    "options":[]
+    },
+    {
+    "name":"FCF Margin",
+    "options":[]
+    },
+    {
+    "name":"EBITDA Margin",
+    "options":[]
+    },
+    {
+    "name":"Research and Development",
+    "options":[]
+    },
+    {
+    "name":"R&D / Revenue",
+    "options":[]
+    },
+    {
+    "name":"Effective Tax Rate",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Tax / Revenue",
+    "options":[]
+    },
+    {
+    "name":"Shareholders' Equity",
+    "options":[]
+    },
+    {
+    "name":"Working Capital",
+    "options":[]
+    }
+]
