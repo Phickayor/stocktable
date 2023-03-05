@@ -28,6 +28,7 @@ function Filter(props) {
         contentContainer.current.classList.toggle("hidden")
     }
     function showContent(e, name) {
+        contentContainer.current.classList.remove("hidden")
         SetContent(e)
         var containers = [allcontainer, popularcontainer, valuationcontainer, activecontainer, companycontainer, dividendscontainer, financialscontainer]
         containers.map((container) => {

@@ -2,7 +2,12 @@ import Filter from '@/components/Filter'
 import Resulttable from '@/components/Resulttable'
 import Head from 'next/head'
 import { useState } from 'react'
-
+// The following import prevents a Font Awesome icon server-side rendering bug,
+// where the icons flash from a very large icon down to a properly sized one:
+import '@fortawesome/fontawesome-svg-core/styles.css';
+// Prevent fontawesome from adding its CSS since we did it manually above:
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false; /* eslint-disable import/first */
 export default function Home({ filterdetails }) {
   // const filter = props.filter
   const [filters, setfilters] = useState()
