@@ -7,11 +7,13 @@ import DividendsFilter from './DividendsFilter'
 import FinancialsFilter from './FinancialsFilter'
 import ValuationFilter from './ValuationFilter'
 import PopularFilter from './PopularFilter'
+import AllFilter from './AllFilter'
 function Filter(props) {
     const [content, SetContent] = useState(<Active />)
     const contentContainer = useRef(null)
     const activecontainer = useRef(null)
     const popularcontainer = useRef(null)
+    const allcontainer = useRef(null)
     const companycontainer = useRef(null)
     const dividendscontainer = useRef(null)
     const financialscontainer = useRef(null)
@@ -27,7 +29,7 @@ function Filter(props) {
     }
     function showContent(e, name) {
         SetContent(e)
-        var containers = [popularcontainer, valuationcontainer, activecontainer, companycontainer, dividendscontainer, financialscontainer]
+        var containers = [allcontainer, popularcontainer, valuationcontainer, activecontainer, companycontainer, dividendscontainer, financialscontainer]
         containers.map((container) => {
             if (container == name) {
                 container.current.classList.add("bg-slate-200")
@@ -79,7 +81,7 @@ function Filter(props) {
             </div>
             <div className='bg-[#F9FAFB] p-2 w-full'>
                 <div className='flex justify-between w-full border-b-2 py-3'>
-                    <h1 className='text-[#111827] text-2xl font-semibold'>Filters</h1>
+                    <h1 className='text-[#111827] text-2xl font-semibold'>Filters {arrow}</h1>
                     {/* repeat */}
                     <div className=' overflow-x-auto lg:block hidden mx-10'>
                         <tr>
@@ -123,7 +125,11 @@ function Filter(props) {
                             </th>
 
                             <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer">Other</th>
-                            <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer">All</th>
+                            <th scope="col"
+                                className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
+                                ref={allcontainer}
+                                onClick={() => showContent(<AllFilter />, allcontainer)}
+                            >All</th>
                         </tr>
                     </div>
 
@@ -136,44 +142,50 @@ function Filter(props) {
                         <th
                             scope="col"
                             className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
+                            ref={activecontainer}
                             onClick={() => SetContent(<Active />)}
-                            style={(content.type.name === "Active") ? { backgroundColor: "#e5e7eb" } : { backgroundColor: "none" }}
                         >
                             Active
                         </th>
                         <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
+                            ref={popularcontainer}
                             onClick={() => SetContent(<PopularFilter />)}
-                            style={(content.type.name === "popularFilter") ? { backgroundColor: "#e5e7eb" } : { backgroundColor: "none" }}
                         >Popular</th>
                         <th scope="col"
+                            ref={companycontainer}
                             className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
                             onClick={() => SetContent(<CompanyFilter />)}
-                            style={(content.type.name === "companyFilter") ? { backgroundColor: "#e5e7eb" } : { backgroundColor: "none" }}
                         >
                             Company
                         </th>
                         <th scope="col"
                             className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
+                            ref={financialscontainer}
                             onClick={() => SetContent(<FinancialsFilter />)}
-                            style={(content.type.name === "FinancialsFilter") ? { backgroundColor: "#e5e7eb" } : { backgroundColor: "none" }}
                         >
                             Financials
                         </th>
                         <th scope="col"
-                            className="px-6 py-3 hover:bg-slate-200 cursor-pointer" onClick={() => SetContent(<ValuationFilter />)}
-                            style={(content.type.name === "ValuationFilter") ? { backgroundColor: "#e5e7eb" } : { backgroundColor: "none" }}
+                            className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
+                            onClick={() => SetContent(<ValuationFilter />)}
+                            ref={valuationcontainer}
                         >
                             Valuation
                         </th>
                         <th scope="col"
                             className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
                             onClick={() => SetContent(<DividendsFilter />)}
-                            style={(content.type.name === "DividendsFilter") ? { backgroundColor: "#e5e7eb" } : { backgroundColor: "none" }}
+                            ref={dividendscontainer}
                         >
                             Dividends
                         </th>
-                        <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer">Other</th>
-                        <th scope="col" className="px-6 py-3 hover:bg-slate-200 cursor-pointer">All</th>
+                        <th scope="col"
+                            className="px-6 py-3 hover:bg-slate-200 cursor-pointer">Other</th>
+                        <th scope="col"
+                            className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
+                            onClick={() => SetContent(<AllFilter />)}
+                            ref={allcontainer}
+                        >All</th>
                     </tr>
 
                 </div>

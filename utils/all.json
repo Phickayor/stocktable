@@ -1,0 +1,651 @@
+[
+    {
+    "name":"Market cap",
+    "options":[]
+    },
+    {
+    "name":"Enterprise Value",
+    "options":[]
+    },
+    {
+    "name":"Industry",
+    "options":[]
+    },
+    {
+    "name":"Stock Price",
+    "options":[]
+    },
+    {
+    "name":"Forward PE",
+    "options":[]
+    },
+    {
+    "name":"Excchange",
+    "options":[]
+    },
+    {
+    "name":"Dividend Yield",
+    "options":[]
+    },
+    {
+    "name":"Dividend Yield ($)",
+    "options":[]
+    },
+    {
+    "name":"Dividend Growth",
+    "options":[]
+    },
+    {
+    "name":"Sector",
+    "options":[]
+    },
+    {
+    "name":"Price Change 1D",
+    "options":[]
+    },
+    {
+    "name":"Price Change 1W",
+    "options":[]
+    },
+    {
+    "name":"Price Change 1M",
+    "options":[]
+    },
+    {
+    "name":"Price Change 6M",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Price Change YTD",
+    "options":[]
+    },
+    {
+    "name":"Price Change 1Y",
+    "options":[]
+    },
+    {
+    "name":"Price Change 2Y",
+    "options":[]
+    },
+    {
+    "name":"Price Change 3Y",
+    "options":[]
+    },
+    {
+    "name":"Price Change 5Y",
+    "options":[]
+    },
+    {
+    "name":"Price Change 10Y",
+    "options":[]
+    },
+    {
+    "name":"Price Change 52W Low",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Price Change 52W High",
+    "options":[]
+    },
+    {
+    "name":"Volume",
+    "options":[]
+    },
+    {
+    "name":"PE Ratio",
+    "options":[]
+    },
+    {
+    "name":"Analyst Rating",
+    "options":[]
+    },
+    {
+    "name":"Analyst Count",
+    "options":[]
+    },
+    {
+    "name":"Price Target (%)",
+    "options":[]
+    },
+    {
+    "name":"Previous Close",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Premarket Price",
+    "options":[]
+    },
+    {
+    "name":"Premkt. % Chg.",
+    "options":[]
+    },
+    {
+    "name":"Country",
+    "options":[]
+    },
+    {
+    "name":"Employees",
+    "options":[]
+    },
+    {
+    "name":"Founded",
+    "options":[]
+    },
+    {
+    "name":"IPO Date",
+    "options":[]
+    },
+    {
+    "name":"Financial Report Date",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Revenue",
+    "options":[]
+    },
+    {
+    "name":"Revenue Growth",
+    "options":[]
+    },
+    {
+    "name":"Rev. Growth (Q)",
+    "options":[]
+    },
+    {
+    "name":"Rev. Growth 3Y",
+    "options":[]
+    },
+    {
+    "name":"Rev. Growth 5Y",
+    "options":[]
+    },
+    {
+    "name":"Gross Profit",
+    "options":[]
+    },
+    {
+    "name":"Gross Prof. Growth",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Gross profit Growth (Q)",
+    "options":[]
+    },
+    {
+    "name":"Gross prof. Growth 3Y",
+    "options":[]
+    },
+    {
+    "name":"Gross Prof. Growth 5Y",
+    "options":[]
+    },
+    {
+    "name":"Op. Income",
+    "options":[]
+    },
+    {
+    "name":"Op. Income Growth",
+    "options":[]
+    },
+    {
+    "name":"Op. Income Growth (Q)",
+    "options":[]
+    },
+    {
+    "name":"Op. Income Growth 3Y",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Op. Income Growth 5Y",
+    "options":[]
+    },
+    {
+    "name":"Net Income",
+    "options":[]
+    },
+    {
+    "name":"Net Income Growth" ,
+    "options":[]
+    },
+    {
+    "name":"Net Income Growth (Q)",
+    "options":[]
+    },
+    {
+    "name":"Net Income Growth 3Y",
+    "options":[]
+    },
+    {
+    "name":"Net Income Growth 5Y",
+    "options":[]
+    },
+    {
+    "name":"Income Taxes",
+    "options":[]
+    }
+    ,
+    {
+    "name":"EPS",
+    "options":[]
+    },
+    {
+    "name":"EPS Growth",
+    "options":[]
+    },
+    {
+    "name":"EPS Growth (Q)",
+    "options":[]
+    },
+    {
+    "name":"EPS Growth 3Y",
+    "options":[]
+    },
+    {
+    "name":"EPS Growth 5Y",
+    "options":[]
+    },
+    {
+    "name":"EBIT",
+    "options":[]
+    }
+    ,
+    {
+    "name":"EBITDA",
+    "options":[]
+    },
+    {
+    "name":"Op. Cash Flow",
+    "options":[]
+    },
+    {
+    "name":"Share-Based Compensation",
+    "options":[]
+    },
+    {
+    "name":"Inv. Cash Flow",
+    "options":[]
+    },
+    {
+    "name":"Fin. Cash FLow",
+    "options":[]
+    },
+    {
+    "name":"Net Cash Flow",
+    "options":[]
+    },
+    {
+    "name":"CapEx",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Free Cash Flow",
+    "options":[]
+    },
+    {
+    "name":"Adjusted FCF",
+    "options":[]
+    },
+    {
+    "name":"FCF/Share",
+    "options":[]
+    },
+    {
+    "name":"FCF Growth",
+    "options":[]
+    },
+    {
+    "name":"FCF Growth (Q)",
+    "options":[]
+    },
+    {
+    "name":"FCF Growth 3Y",
+    "options":[]
+    },
+    {
+    "name":"FCF Growth 5Y",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Total Cash",
+    "options":[]
+    },
+    {
+    "name":"Totl Debt",
+    "options":[]
+    },
+    {
+    "name":"Net Cash / Debt" ,
+    "options":[]
+    },
+    {
+    "name":"Net Cash Growth",
+    "options":[]
+    },
+    {
+    "name":"Cash / Market Cap",
+    "options":[]
+    },
+{
+"name":"Total Assets",
+"options":[]
+},
+{
+"name":"Total Liabilities",
+"options":[]
+},
+{
+"name":"Gross Margin",
+"options":[]
+},
+{
+"name":"Operating Margin",
+"options":[]
+},
+{
+"name":"Profit Margin",
+"options":[]
+},
+{
+"name":"FCF Margin",
+"options":[]
+}
+,
+{
+"name":"EBITDA Margin",
+"options":[]
+},
+{
+"name":"EBIT MArgin",
+"options":[]
+},
+{
+"name":"Research & Development" ,
+"options":[]
+},
+{
+"name":"R&D / Revenue",
+"options":[]
+},
+{
+"name":"PS Ratio",
+"options":[]
+},
+    {
+    "name":"Forward PS",
+    "options":[]
+    },
+    {
+    "name":"PB Ratio",
+    "options":[]
+    }
+    ,
+    {
+    "name":"P/FCF Ratio",
+    "options":[]
+    },
+    {
+    "name":"PEG Ratio",
+    "options":[]
+    },
+    {
+    "name":"EV/Sales",
+    "options":[]
+    },
+    {
+    "name":"Forward EV/Sales",
+    "options":[]
+    },
+    {
+    "name":"EV/Earnings",
+    "options":[]
+    },
+    {
+    "name":"EV/EBITDA",
+    "options":[]
+    },
+    {
+    "name":"EV/EBIT",
+    "options":[]
+    }
+    ,
+    {
+    "name":"EV/FCF",
+    "options":[]
+    },
+    {
+    "name":"Earnings Yield",
+    "options":[]
+    },
+    {
+    "namePE Ra":"FCF Yield",
+    "options":[]
+    },
+    {
+    "name":"Payout Ratio",
+    "options":[]
+    },
+    {
+    "name":"Payout Freq.",
+    "options":[]
+    },
+    {
+    "name":"Buyback Yield / Dilution",
+    "options":[]
+    },
+    {
+    "name":"Shareholder Yield",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Average Volume",
+    "options":[]
+    },
+    {
+    "name":"Relative Volume",
+    "options":[]
+    },
+    {
+    "name":"Beta (1Y)",
+    "options":[]
+    },
+    {
+    "name":"Short % Float",
+    "options":[]
+    },
+    {
+    "name":"Short % Shares",
+    "options":[]
+    },
+    {
+    "name":"Short Ratio",
+    "options":[]
+    },
+    {
+    "name":"Shares Out",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Float",
+    "options":[]
+    },
+    {
+    "name":"Shares Ch. (YoY)",
+    "options":[]
+    },
+    {
+    "name":"Shares Ch. (QoQ)",
+    "options":[]
+    },
+    {
+    "name":"Shares Insiders",
+    "options":[]
+    },
+    {
+    "name":"Shares Institut.",
+    "options":[]
+    },
+    {
+    "name":"Earnings Date",
+    "options":[]
+    },
+    {
+    "name":"Is SPAC",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Ex-Div Date",
+    "options":[]
+    },
+    {
+    "name":"Return On Equity",
+    "options":[]
+    },
+    {
+    "name":"Return on Assets",
+    "options":[]
+    },
+    {
+    "name":"Return on Capital",
+    "options":[]
+    },
+    {
+    "name":"Return on Euity(5Y)",
+    "options":[]
+    },
+    {
+    "name":"Return on Assets (5Y)",
+    "options":[]
+    },
+    {
+    "name":"Return On Capital (5Y)",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Rev / Employee",
+    "options":[]
+    },
+    {
+    "name":"Prof. / Employee",
+    "options":[]
+    },
+    {
+    "name":"Asset Turnover" ,
+    "options":[]
+    },
+    {
+    "name":"Inv. Turnover",
+    "options":[]
+    },
+    {
+    "name":"Current Ratio",
+    "options":[]
+    },
+    {
+    "name":"Quick Ratio",
+    "options":[]
+    },
+    {
+    "name":"Debt / Equity",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Debt / EBITDA",
+    "options":[]
+    },
+    {
+    "name":"Debt / FCF",
+    "options":[]
+    },
+    {
+    "name":"Effective Tax Rate",
+    "options":[]
+    },
+    {
+    "name":"Tax / Revenue",
+    "options":[]
+    },
+    {
+    "name":"Shareholders' Equity",
+    "options":[]
+    },
+    {
+    "name":"Working Capital",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Last Stock Split",
+    "options":[]
+    },
+    {
+    "name":"Last Split Date",
+    "options":[]
+    },
+    {
+    "name":"Altman Z-score",
+    "options":[]
+    },
+    {
+    "name":"Piotroski F-Score",
+    "options":[]
+    },
+    {
+    "name":"EPS Growth This Quarter",
+    "options":[]
+    },
+    {
+    "name":"EPS Growth Next Quarter",
+    "options":[]
+    },
+    {
+    "name":"Rev. Growth THis Year",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Rev. Growth Next Year",
+    "options":[]
+    },
+    {
+    "name":"EPS Growth Next 5Y",
+    "options":[]
+    },
+    {
+    "name":"Rev. Growth Next 5Y",
+    "options":[]
+    },
+    {
+    "name":"In Index",
+    "options":[]
+    },
+    {
+    "name":"Market Cap Group",
+    "options":[]
+    },
+    {
+    "name":"Views",
+    "options":[]
+    },
+    {
+    "name":"Tag",
+    "options":[]
+    }
+    ,
+    {
+    "name":"Interest Coverage",
+    "options":[]
+    }
+]
