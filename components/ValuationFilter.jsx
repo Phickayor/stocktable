@@ -51,5 +51,4 @@ function ValuationFilter() {
         </div>
     )
 }
-
 export default ValuationFilter

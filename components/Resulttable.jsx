@@ -16,7 +16,7 @@ function Resulttable(props) {
                     setTable(filteredInfo)
                 }
                 else {
-                    console.log(filteredInfo)
+                    console.log("Not in Filter")
                 }
             })
         })
