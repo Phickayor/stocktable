@@ -1,6 +1,9 @@
+// Pass from Company filter to Filter to index to Resultttable
+
 import Filter from '@/components/Filter'
 import Resulttable from '@/components/Resulttable'
 import Head from 'next/head'
+import SetFilteredInfo from '@/components/Resulttable'
 import { useState } from 'react'
 // The following import prevents a Font Awesome icon server-side rendering bug,
 // where the icons flash from a very large icon down to a properly sized one:
@@ -9,13 +12,13 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 config.autoAddCss = false; /* eslint-disable import/first */
 export default function Home({ filterdetails }) {
-  // const filter = props.filter
-  const [filters, setfilters] = useState()
-  filterdetails = filters
-  // console.log(filter)
+  var FiltersForTable = []
   function setFilter(details) {
-    setfilters(details)
+    FiltersForTable.push(details)
+    console.log(FiltersForTable)
+    SetFilteredInfo()
   }
+  filterdetails = FiltersForTable
   return (
     <>
       <Head>

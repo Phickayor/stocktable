@@ -18,7 +18,7 @@ function companyFilter(props) {
                 }
                 else {
                     filters.push(newFilter)
-                    props.filterHandler(filters)
+                    props.setFilterHandler(filters)
                 }
             }
         }

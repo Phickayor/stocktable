@@ -2,56 +2,25 @@ import React, { useEffect, useState } from 'react'
 import infos from "../utils/info.json"
 function Resulttable(props) {
     const SetFilter = props.filterdetails
-    var background; var percentcolor; var table
+    var background; var percentcolor;
+    const [FilteredTable, setFilteredTable] = useState(infos)
+
     var filteredInfo = []
     //Filtering Function
-    // function setTable() {
-    //     table = filteredInfo.map((info, index) => {
-    //         if (index % 2 != 0) {
-    //             background = "white"
-    //         }
-    //         else if (index % 2 == 0) {
-    //             background = "#F6F7F8"
-    //         }
-    //         if (info.percentChange > 0) {
-    //             percentcolor = "green"
-    //         }
-    //         else {
-    //             percentcolor = "red"
-    //         }
-    //         return (
-    //             <tr key={index} style={{ backgroundColor: background }}>
-
-    //                 <td className="px-6 py-4 text-blue-700">{info.symbol}</td>
-    //                 <td colSpan="2" className="px-6 py-4 font-medium">
-    //                     {info.name}
-    //                 </td>
-    //                 <td className="px-6 py-4">{info.marketcap}B</td>
-    //                 <td className="px-6 py-4">{info.stockprice}</td>
-    //                 <td className="px-6 py-4" style={{ color: percentcolor }}>{info.percentChange}%</td>
-    //                 <td colSpan="2" className="px-6 py-4 font-medium">
-    //                     {info.industry}
-    //                 </td>
-    //                 <td className="px-6 py-4">{info.volume}</td>
-    //                 <td className="px-6 py-4">{info.peRatio}</td>
-    //             </tr>
-    //         )
-    //     })
-    // }
+    // SetFilteredInfo([{ name: 'industry', value: 'Internet retail' }, { name: 'industry', value: 'Insurance Diversified' }, { name: 'symbol', value: 'GOOGL' }])
 
     function SetFilteredInfo(filters) {
         infos.map(info => {
             filters.map(filter => {
                 var column = filter.name
                 var content = filter.value
-                // console.log(content + info[column])
                 if (info[column] === content) {
-                    console.log(info[column])
                     filteredInfo.push(info)
-                    // setTable()
+                    // console.log(filteredInfo)
+                    setFilteredTable(filteredInfo)
                 }
                 else {
-                    console.log(filteredInfo)
+                    console.log("Not in Filter")
                 }
             })
         })
@@ -60,10 +29,9 @@ function Resulttable(props) {
     // infos.sort()
 
     useEffect(() => {
-        SetFilteredInfo([{ name: 'industry', value: 'Internet retail' }, { name: 'industry', value: 'computer' }])
         console.log(SetFilter)
         // setTable()
-    })
+    }, [])
 
     return (
         <div className="mx-auto w-11/12 relative overflow-x-auto shadow-md sm:rounded-lg">
@@ -83,7 +51,7 @@ function Resulttable(props) {
                 <tbody className="text-[#111827] font-sans ">
                     {/* {table} */}
 
-                    {infos.map((info, index) => {
+                    {FilteredTable.map((info, index) => {
                         if (index % 2 != 0) {
                             background = "white"
                         }

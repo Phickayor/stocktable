@@ -21,7 +21,7 @@ function Filter(props) {
     var arrow = <FontAwesomeIcon icon={faAngleDown} onClick={showFilter} className="cursor-pointer text-lg" />
 
 
-    function compfilters(details) {
+    function setfilters(details) {
         props.setFilterHandler(details)
     }
     function showFilter() {
@@ -40,10 +40,6 @@ function Filter(props) {
             }
         })
     }
-    useEffect(() => {
-        compfilters()
-    }, [])
-
     // const padlock = <FontAwesomeIcon icon={faLock} />
     return (
         <div className="w-11/12 mx-auto my-5">
@@ -102,7 +98,7 @@ function Filter(props) {
                             <th scope="col"
                                 ref={companycontainer}
                                 className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
-                                onClick={() => showContent(<CompanyFilter filterHandler={compfilters} />, companycontainer)}
+                                onClick={() => showContent(<CompanyFilter setFilterHandler={setfilters} />, companycontainer)}
                             >
                                 Company
                             </th>
@@ -155,7 +151,7 @@ function Filter(props) {
                         <th scope="col"
                             ref={companycontainer}
                             className="px-6 py-3 hover:bg-slate-200 cursor-pointer"
-                            onClick={() => SetContent(<CompanyFilter />)}
+                            onClick={() => SetContent(<CompanyFilter setFilterHandler={setfilters} />)}
                         >
                             Company
                         </th>
