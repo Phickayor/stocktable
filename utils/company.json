@@ -1,42 +1,95 @@
 [
     {
-    "name":"Company",
-    "options":[]
+    "name":"Industry",
+    "options":[
+        "Biotechnology","Shell Companies","Banks - Regional",
+        "Software-Application", "Medical Devices", "Software-Infrastructure",
+        "Asset Management", "Drug Manufacturers - Speciality & Generic",
+        "Diagnostics & Research", "Information Technology Services", "Aerospace & Defense",
+        "Internet Content & Information", "Packaged Foods", "Communication Equipment",
+        "Semiconductors", "Telecom Services", "Health Information Services", "Credit Services",
+        "Specialty Chemicals", "Medical Instruments & Supplies", "Capital Markets", " Restaurants",
+        "Oil & Gas Midstream","Specialty Retail", "Medical Care Facilities","Oil & Gas Equipment & Services", 
+        "Entertainment", "Internet Retail","Auto Parts", "Electrical Equipment & Parts", "Electronic Components",
+        "Gold", "Education & Training Services", "Advertising Agencies", "Real Estate Services" ,
+        "Insurarnce-Property & casualty", "REIT - Mortgage", "Engineering & Construction", "Utilities - Regulated Electric",
+        "Computer Hardware", " Other Industrial Metals & Minning", "Apparel Retail", "Specialty Business Services", 
+        "Building Products & Equipment", "Marine Shipping", " Auto Manufacturers" , "Scientific & Technical Instruments",
+        "Furnishings, Fixtures & Appliances", "Semiconductor Equipment & Material", "REIT- Retail", "Leisure", 
+        "Farm & Heavy Construction Machinery", "Staffing & Employment", "Auto & Truck Dealership", " Household & Personal Products",
+        " REIT -Office" , "Electronic Gaming & Multimedia", "REIT - Diversified", "Utilities- Renewable", "Packaging & Containers",
+        "Security & Protection Services","Farm Products", "Rental & Leasing Service", "Banks - Diversified", "Steel",
+        "Apparel Manufacturing", "Conglomerates", "Residential Construction", "Solar", "Insurance-Specialty", "Waste Management",
+        "Oil & Gas Refining & MArketing", "Insurance-Life", "Resorts & Casinos", "Trucking", "Gambling", "Metal Fabrication", 
+        "Airlines", "REIT-Residential", "Oil & Gas Integrated", "Integrated freight & Logistics", "REIT - Industrial",
+        "REIT - Specialty", "Recreational Vehicles", "Broadcasting", "Drug Manufacturers", "Beverages - Non-Alcoholic",
+        "Insurance Brokers", "Agricultural Inputs", "REIT - Healthcare Facilities", "REIT - Hotel & Motel", "Consumer Electronics", "Travel Services", "Chemicals", "Industrial Distribution", "Personal Services", "Mortgage Finance", "Other Precious Metals & Minning", "Insurance-Diversified", "Consulting Services", "Utilities Diversified", "Building Materials", "Utilities- Regulated Water", "Utilities-Regulated Gas", "Pollution & Treatment Controls", "Railroads", "Lodging", "Tools & Accessories", "Luxury Goods", "Healthcare Plans", "Footware & Accessories", "Food Distribution", "Grocery Stores", "Pharmaceutical Retailers", "Financial Data & Stock Exchanges", "Publishing", "Tobacco", "Beverages -  Wineries & Distilleries", "Electronics & Computer Distribution", "Oil & Gas Drilling", "Real Estate - Development", " Discount Stores", "Home improvement Retail", "Medical distribution", "Uranium", "Airports & Air Services", "Insurance-Reinsurance", "Beverages - Brewers", "Paper & Paper Products", "Thermal coal", "Utilities - Independent Power Producers", "Real Estate - Diversified", "Copper", "Business Equipment & Supplies", "Department Stores", "Silver", "Cooking Coal", "Confectioners", "Aluminum", "Lumber & Wood production", "Textile Manufacturing", "Financial Conglomerates", "Infrastructure Operations", "Infprmation Technology", "Software - Application", "Health Care", "Telecom Services- Foreign", "Energy Equipment & Services", "Healthcare Equipment & Supplies", "Software-Infrastructure", "Financials", "Software"
+        ]
     },
     {
     "name":"Exchange",
-    "options":[]
+    "options":["NASDAQ", "NYSW", "NYSE AMERICAN"]
     },
     {
     "name":"Sector",
-    "options":[]
+    "options":["Healthcare", "Financials", "Technology", "Industrials", "Consumer Discretionary", "Communication Services", 
+    "Real estate", "Energy", "Materials", "Consumer Staples", "Utilities", "Electronic Equipment, Instruments & Components",
+     "Diversified FInancial Services", "Pharmaceuticals"
+]
     },
     {
     "name":"Country",
-    "options":[]
+    "options":[ "United States", "Canada", "China", "Israel", "United Kingdom", "Brazil", "Hong Kong", "Bermuda", 
+    "Ireland", "Singapore", "Cayman Islands", "Switzerland", "Germany", "Australia", "Luxembourg", "Netherlands",
+     "Greece", "Mexico", "France", "Argentina", "Taiwan", "Japan", "India", "South Korea", "Chile", "Sweden",
+      "Malaysia", "Belgium", "Italy", "South Africa", "Denmark", "Spain", "Colombia", "Peru", "Monaco", "United Arab Emirates",
+       "Norway", "Uruguay", "Jersey", "The Bahamas", "Indonesia", "Kazakhstan", "Panama", "Turkey", "Guernsey",
+        "Cyprus", "Finland", "Philippines", "Iceland", "Costa Rica", "Jordan", "Gibraltar", "VG", "Macau", "Malta"
+
+    ]
     },
     {
     "name":"Employees",
-    "options":[]
+    "options":[ "Over 500K", "Over 300K", "Over 200K", "Over 100K", "Over 10K", "Over 1K", "Over 100",
+     "Over 0", "Under 1K", "under 1K", "Under 10K", "Under 100K"
+    ]
     },
     {
     "name":"Founded",
-    "options":[]
+    "options":[ "Over 100 Years Ago", "Over 50 Years Ago", "Over 20 Years Ago", "Over 10 Years Ago",
+     "Over 5 Years Ago", "Over 3 Years Ago", "Last Year", "This Year", "Within 3 Years", "Within 5 Years", 
+     "Within 10 Years", "Within 20 Years", "Within 50 Years", "Within 100 Years"
+    ]
     },
     {
     "name":"IPO Date",
-    "options":[]
+    "options":[ "Today", "Yesterday", "Past Week", "Past Month", "Past 3 Months", "Past 6 Months", "Past 12 Years", 
+    "This Year", "Last Year", "Within 3 Years", "Within 5 Years", "Over 1 Year Ago", "Over 3 Years Ago",
+     "Over 5 Years Ago", "Year 2022", "Year 2021", "Year 2020", "Year 2019"
+    ]
     },
     {
     "name":"Earnings Date",
-    "options":[]
+    "options":[ "Today", "Tomorrow", "Yesterday", "Next 7D", "Next 30D", "Past 7D", "Past 30D", "This Month"
+    ]
     },
     {
     "name":"Is SPAC",
-    "options":[]
+    "options":[ "Exclude SPACs", "Show Only SPACs"
+    ]
     },
     {
     "name":"In Index",
-    "options":[]
-    }
+    "options":[ "S&P500", "Nasdaq 100", "Dow Jones"
+    ]
+    },
+   {
+    "name":"Tag",
+    "options":[ "Energy", "Clean energy", "Gaming", "Electric vehicles", "Car Company", "Online gambling", 
+    "Augumented reality", "Mobile Games", "Streaming", "Meme", "Virtual Reality", "Metaverse", "Social Media", 
+    "Esports", "Autonomous Driving", "Sports betting", "Pharmaceuticals", "Game dev", "Online dating", "Gaming merch",
+     "Crypto", "Banks", "Retailer", "China education", "Education", "Chinese stocks-us", "Canadian stocks-us",
+      "Video Streaming", "Telehealth", "Israeli stocks-us"
+    ]
+   }  
 ]
